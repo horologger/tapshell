@@ -1,0 +1,8 @@
+gotty
+builds
+js/dist
+js/node_modules/*
+NOTES.md
+data/
+setenv.sh
+.DS_Store
