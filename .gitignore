@@ -3,6 +3,11 @@ builds
 js/dist
 js/node_modules/*
 NOTES.md
-data/
+data/node_a
+data/node_b
+lit_node_a.conf
+lit_node_b.conf
+data/lit/wpwa
+data/lit/wpwb
 setenv.sh
 .DS_Store
