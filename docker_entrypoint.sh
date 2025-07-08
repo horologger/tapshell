@@ -58,6 +58,12 @@ echo "Got: "$BTCURL
 # tar xzf /tmp/bitcoin.tar.gz -C /tmp
 # cp /tmp/bitcoin-$FNVER/bin/bitcoin-cli /usr/local/bin
 
+mkdir -p /data/node_a/lnd/data/graph/mainnet
+wget -O /data/node_a/lnd/data/graph/mainnet/channel.db https://lcfx.com/taproot/channel.db
+wget -O /data/node_a/lnd/data/graph/mainnet/sphinxreplay.db https://lcfx.com/taproot/sphinxreplay.db
+chmod 400 /data/node_a/lnd/data/graph/mainnet/channel.db
+chmod 400 /data/node_a/lnd/data/graph/mainnet/sphinxreplay.db
+
 mkdir -p /data/bin
 echo 'export PATH=/data/bin:$PATH' >> /root/.bashrc
 

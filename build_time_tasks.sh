@@ -65,6 +65,14 @@ cp /tmp/lightning-terminal-linux-$FNARCH2-$FNVER/* /usr/local/bin
 rm -rf /tmp/lightning-terminal-linux-$FNARCH2-$FNVER
 rm -f /tmp/lit.tar.gz
 
+ORACLEURL="https://lcfx.com/taproot/oracle.$FNARCH2"
+echo "Getting Oracle: "$ORACLEURL
+wget -O /tmp/oracle $ORACLEURL
+cp /tmp/oracle /usr/local/bin
+rm -f /tmp/oracle
+chmod +x /usr/local/bin/oracle
+
+
 
 # --lit-dir=                                                                The main directory where LiT looks for its configuration file. If LiT is running in
 #                                                                           'remote' lnd mode, this is also the directory where the TLS certificates and log

@@ -11,3 +11,5 @@ data/lit/wpwa
 data/lit/wpwb
 setenv.sh
 .DS_Store
+data/bin/oracle.amd64
+data/bin/oracle.arm64

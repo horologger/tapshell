@@ -57,6 +57,10 @@ COPY ./build_bitcoin_conf.sh /usr/bin/build_bitcoin_conf.sh
 RUN chmod a+x /usr/bin/build_bitcoin_conf.sh
 RUN /bin/bash /usr/bin/build_bitcoin_conf.sh
 
+COPY data/lit_00000.conf /data/lit_00000.conf
+COPY ./generate_lit_configs.sh /usr/bin/generate_lit_configs.sh
+RUN chmod a+x /usr/bin/generate_lit_configs.sh
+
 USER 0
 
 EXPOSE 8080
